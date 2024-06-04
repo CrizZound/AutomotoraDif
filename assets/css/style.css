@@ -1,0 +1,55 @@
+.btn.btn-primary {
+    background-color: #ccc; /* Color de fondo inicial */
+    color: #020202;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn.btn-primary:hover {
+    background-color: #555; 
+}
+footer {
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#nombrePag{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#inicio{
+    color: black;
+}
+
+#modelos{
+    color: black;
+}
+
+#caracteristicas{
+    color: black;
+}
