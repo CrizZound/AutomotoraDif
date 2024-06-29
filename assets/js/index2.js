@@ -17,7 +17,7 @@ const crearTarjetas = (autos) =>{
     let autoRow = document.getElementById("autoRow");
 
     autos.map((auto) =>{
-        const {modelo, color, imagen} = auto;
+        const {modelo, color, imagen, descripcion, precio} = auto;
 
         const divRow = document.createElement("div");
         divRow.classList.add("col-xl-3");
@@ -42,18 +42,20 @@ const crearTarjetas = (autos) =>{
         titulo.classList.add("card-title");
         titulo.textContent = modelo;
 
-        const subTitulo = document.createElement("p");
+        const subTitulo = document.createElement("h6");
         subTitulo.classList.add("card-text");
         subTitulo.textContent = color;
 
-        
+        const precioSub = document.createElement("p");
+        precioSub.classList.add("card-text");
+        precioSub.textContent = precio;
 
         const btnMostrar = document.createElement("button");
         btnMostrar.classList.add("btn");
         btnMostrar.classList.add("btn-danger");
         btnMostrar.textContent= "Ver detalles";
         btnMostrar.addEventListener("click", () => {
-            enviarDatos(modelo, color, imagen);
+            enviarDatos(modelo, color, imagen, descripcion, precio);
         })
 
         divRow.appendChild(card);
@@ -63,6 +65,7 @@ const crearTarjetas = (autos) =>{
 
         divBody.appendChild(titulo);
         divBody.appendChild(subTitulo);
+        divBody.appendChild(precioSub);
         divBody.appendChild(btnMostrar);
 
         autoRow.appendChild(divRow);

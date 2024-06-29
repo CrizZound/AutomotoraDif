@@ -1,4 +1,4 @@
-export const enviarDatos = ( modelo, color, imagen) => {
+export const enviarDatos = ( modelo, color, imagen, descripcion, precio) => {
     const rutaArchivoHtml = '../autos.html';
 
     fetch(rutaArchivoHtml)
@@ -15,6 +15,13 @@ export const enviarDatos = ( modelo, color, imagen) => {
 
             const colorPage = doc.getElementById('colorPage');
             colorPage.textContent = color;
+
+            const precioPage = doc.getElementById('precioPage');
+            precioPage.textContent = precio;
+
+
+            const descripcionPage = doc.getElementById('descripcionPage');
+            descripcionPage.textContent = descripcion;
 
             const nuevoHTML = new XMLSerializer().serializeToString(doc);
             

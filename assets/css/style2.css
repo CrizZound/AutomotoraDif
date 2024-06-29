@@ -128,3 +128,12 @@ input[type="submit"]:hover{
 .registrarse a:haver{
     text-decoration: underline;
 }
+
+#inicio{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 8.5rem;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

@@ -19,5 +19,7 @@ body {
 }
 
 #volverCarrito{
-   outline: none;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
 }
