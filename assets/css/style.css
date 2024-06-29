@@ -54,3 +54,28 @@ footer a:hover {
     color: black;
 }
 
+.btnMostrar{
+    background: black;
+}
+
+#volver{
+    background: black;
+    color: white;   
+}
+
+#ImagePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #tittlePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #colorPage{
+    display: flex;
+   
+    align-items: center;
+ }
