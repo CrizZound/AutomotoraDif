@@ -1,5 +1,5 @@
-export const enviarDatos = (name, nivel, imagen) => {
-    const rutaArchivoHtml = '../personaje.html';
+export const enviarDatos = ( modelo, color, imagen) => {
+    const rutaArchivoHtml = '../autos.html';
 
     fetch(rutaArchivoHtml)
         .then(response => response.text())
@@ -11,10 +11,10 @@ export const enviarDatos = (name, nivel, imagen) => {
             imagePage.src = imagen;
 
             const titlePage= doc.getElementById('titlePage');
-            titlePage.textContent = name;
+            titlePage.textContent = modelo;
 
-            const nivelPage = doc.getElementById('nivelPage');
-            nivelPage.textContent = nivel;
+            const colorPage = doc.getElementById('colorPage');
+            colorPage.textContent = color;
 
             const nuevoHTML = new XMLSerializer().serializeToString(doc);
             

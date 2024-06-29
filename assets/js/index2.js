@@ -1,22 +1,23 @@
 import { enviarDatos } from "./operaciones.js";
 
-const obtenerDigimones = async() => {
+const obtenerAutos = async() => {
     try{
-        const response = await fetch("https://digimon-api.vercel.app/api/digimon");
+        const response = await fetch("https://api-render-f1bl.onrender.com/");
         const data = await response.json();
-        return data;
+        return data.carModels;
     }
     catch(error){
         console.log(`El error es: ${error}`);
     }
 }
 
-const crearTarjetas = (digimones) =>{
 
-    let digimonRow = document.getElementById("digimonRow");
+const crearTarjetas = (autos) =>{
 
-    digimones.map((digimon) =>{
-        const {name, level : nivel, img : imagen} = digimon;
+    let autoRow = document.getElementById("autoRow");
+
+    autos.map((auto) =>{
+        const {modelo, color, imagen} = auto;
 
         const divRow = document.createElement("div");
         divRow.classList.add("col-xl-3");
@@ -39,18 +40,20 @@ const crearTarjetas = (digimones) =>{
 
         const titulo = document.createElement("h5");
         titulo.classList.add("card-title");
-        titulo.textContent = name;
+        titulo.textContent = modelo;
 
         const subTitulo = document.createElement("p");
         subTitulo.classList.add("card-text");
-        subTitulo.textContent = nivel;
+        subTitulo.textContent = color;
+
+        
 
         const btnMostrar = document.createElement("button");
         btnMostrar.classList.add("btn");
         btnMostrar.classList.add("btn-danger");
         btnMostrar.textContent= "Ver detalles";
         btnMostrar.addEventListener("click", () => {
-            enviarDatos(name, nivel, imagen);
+            enviarDatos(modelo, color, imagen);
         })
 
         divRow.appendChild(card);
@@ -62,13 +65,13 @@ const crearTarjetas = (digimones) =>{
         divBody.appendChild(subTitulo);
         divBody.appendChild(btnMostrar);
 
-        digimonRow.appendChild(divRow);
+        autoRow.appendChild(divRow);
     })
 }
 
-obtenerDigimones()
-    .then((digimones) => {
-       crearTarjetas(digimones);
+obtenerAutos()
+    .then((autos) => {
+       crearTarjetas(autos);
     })
     .catch((error) => {
         console.log(error);

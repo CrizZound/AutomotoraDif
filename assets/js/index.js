@@ -1,7 +1,7 @@
 const llamarDigimones = () => {
     return new Promise((resolve, reject) => {
 
-        fetch("https://digimon-api.vercel.app/api/digimon")
+        fetch("https://api-render-f1bl.onrender.com/")
             .then((digimones) =>{
                 if(!digimones.ok){
                     throw new Error("Error");
