@@ -1,11 +1,11 @@
 .btn.btn-primary {
-    background-color: #ccc; /* Color de fondo inicial */
+    background-color: #ccc; 
     color: #020202;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave */
+    transition: background-color 0.3s ease; 
 }
 
 .btn.btn-primary:hover {
@@ -50,9 +50,6 @@ footer a:hover {
     color: black;
 }
 
-#caracteristicas{
-    color: black;
-}
 
 .btnMostrar{
     background: black;
@@ -72,19 +69,17 @@ footer a:hover {
 
 #ImagePage {
     border-radius: 10px;
-    border-style: dotted;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    z-index: 1;
-    padding-top: 0px;
-    overflow: hidden;
+    border: none; 
+    display: flex;
+    margin-left: 5rem;
+    background: #f0f0f0; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                -4px -4px 8px rgba(255, 255, 255, 0.5),
+                4px -4px 8px rgba(0, 0, 0, 0.2),
+                -4px 4px 8px rgba(255, 255, 255, 0.5); 
 }
 
-.row{
-    margin: 0%;
-    padding: 0%;
-}
+
 
  #tittlePage{
     display: flex;
@@ -101,7 +96,7 @@ footer a:hover {
 
  #descripcionPage{
     display: flex;
-
+    margin-right: 5rem;
  }
 
 #añadirCarrito{
@@ -134,13 +129,6 @@ footer a:hover {
     padding-right: 16%;
     padding-left: 8%;
     text-transform: uppercase;
-    
-
 }
 
-#ImagePage{
-    display: flex;
-    padding-top: 3rem;
-    margin-left: 5rem;
-    background: none;
-}
+
