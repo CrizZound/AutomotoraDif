@@ -63,15 +63,34 @@ footer a:hover {
     color: white;   
 }
 
-#ImagePage{
+#detalleAuto{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 3rem;
+    background: rgb(36, 35, 35);
+    color: white;
 }
+
+#ImagePage {
+    border-radius: 10px;
+    border-style: dotted;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+.row{
+    margin: 0%;
+    padding: 0%;
+}
+
  #tittlePage{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
  }
 
  #colorPage{
@@ -79,3 +98,49 @@ footer a:hover {
    
     align-items: center;
  }
+
+ #descripcionPage{
+    display: flex;
+
+ }
+
+#añadirCarrito{
+    display: flex;
+    padding-top: 3rem;
+}
+
+#modelo{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.anadir{
+    display: flex;
+    margin-right: 30rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    text-transform: uppercase;
+}
+
+#volverCarrito{
+    display: flex;
+    background: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 30rem;
+    margin-right: 94%;
+    padding-right: 16%;
+    padding-left: 8%;
+    text-transform: uppercase;
+    
+
+}
+
+#ImagePage{
+    display: flex;
+    padding-top: 3rem;
+    margin-left: 5rem;
+    background: none;
+}
