@@ -9,8 +9,16 @@
 }
 
 .btn.btn-primary:hover {
-    background-color: #555; 
+    background-color:#f7b707; 
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
 footer {
     background-color: rgb(56, 56, 56);
     color: #fff;
@@ -47,10 +55,25 @@ footer a:hover {
     color: black;
 }
 
+#inicio:hover{
+    color: #c99404;
+}
+
 #modelos{
     color: black;
 }
 
+#modelos:hover{
+    color: #c99404;
+}
+
+#perfil:hover{
+    color: #c99404;
+}
+
+#carro:hover{
+    color: #c99404;
+}
 
 .btnMostrar{
     background: black;
@@ -67,7 +90,6 @@ footer a:hover {
     background: rgb(36, 35, 35);
     color: white;
 }
-
 
  #tittlePage{
     display: flex;
@@ -118,5 +140,8 @@ footer a:hover {
     color: white;
     border-color: #f7b707;
 }
+
+
+
 
 

@@ -2,7 +2,7 @@ img{
     width: 500px;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px 10px 5px 5px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card{
@@ -10,4 +10,11 @@ img{
     border-color: rgba(245, 229, 1, 0.416);
 }
 
+#perfil:hover{
+    color: #c99404;
+}
+
+#carro:hover{
+    color: #c99404;
+}
 

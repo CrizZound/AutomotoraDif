@@ -8,6 +8,10 @@
     padding-right: 2rem; 
 }
 
+#añadir:hover{
+    background-color: #fdce4c;
+    color:rgb(68, 68, 67);
+}
 #ImagePage {
     width: 200px;
     height: 350px;
@@ -20,4 +24,15 @@
                 -4px -4px 8px rgba(255, 255, 255, 0.5),
                 4px -4px 8px rgba(0, 0, 0, 0.2),
                 -4px 4px 8px rgba(255, 255, 255, 0.5); 
+}
+
+#volverCarrito{
+    display: flex;
+    background-color: black;
+    border-color:#fdce4c;
+}
+
+#volverCarrito:hover{
+    background-color: #c89d03;
+    color: white;
 }
