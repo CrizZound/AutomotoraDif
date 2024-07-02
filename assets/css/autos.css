@@ -1,3 +1,9 @@
+
+body{
+    margin: 0;
+   
+}
+
 #añadir{
     display: flex;
     text-align: center;
@@ -6,11 +12,13 @@
     margin-left: 3.3rem;
     padding-left: 2rem;
     padding-right: 2rem; 
+    
 }
 
 #añadir:hover{
     background-color: #fdce4c;
     color:rgb(68, 68, 67);
+    transform: translateY(-2%);
 }
 #ImagePage {
     width: 200px;
@@ -24,15 +32,30 @@
                 -4px -4px 8px rgba(255, 255, 255, 0.5),
                 4px -4px 8px rgba(0, 0, 0, 0.2),
                 -4px 4px 8px rgba(255, 255, 255, 0.5); 
+    transition: all 200ms ease;
+}
+
+#imagePage:hover{
+    transform: translateY(-3%)
 }
 
 #volverCarrito{
     display: flex;
     background-color: black;
     border-color:#fdce4c;
+    transition: all 200ms ease;
 }
 
 #volverCarrito:hover{
     background-color: #c89d03;
     color: white;
+    transform: translateY(-2%)
+}
+
+#perfil:hover{
+    color: #c99404;
+}
+
+#carro:hover{
+    color: #c99404;
 }

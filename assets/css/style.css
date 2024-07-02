@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+}
+
 .btn.btn-primary {
     background-color: #ccc; 
     color: #020202;
@@ -53,26 +57,40 @@ footer a:hover {
 
 #inicio{
     color: black;
+    transition: all 200ms ease;
 }
 
 #inicio:hover{
     color: #c99404;
+    transform: translateY(-3%)
 }
 
 #modelos{
     color: black;
+    transition: all 200ms ease;
 }
 
 #modelos:hover{
     color: #c99404;
+    transform: translateY(-3%)
+}
+
+#perfil{
+    transition: all 200ms ease;
 }
 
 #perfil:hover{
     color: #c99404;
+    transform: translateY(-3%)
+}
+
+#carro{
+    transition: all 200ms ease;
 }
 
 #carro:hover{
     color: #c99404;
+    transform: translateY(-3%)
 }
 
 .btnMostrar{
@@ -138,9 +156,14 @@ footer a:hover {
 .botonDetalle{
     background-color: #000000;
     color: white;
-    border-color: #f7b707;
+    border-color: #000000;
 }
 
+.botonDetalle:hover{
+    background-color: #c99404;
+    border-color: #c99404;
+    color: white;
+}
 
 
 
