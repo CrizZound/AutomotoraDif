@@ -32,6 +32,7 @@ footer a:hover {
 #nombrePag{
     text-align: center;
     background-color: black;
+    border-color:#f7b707;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -67,19 +68,6 @@ footer a:hover {
     color: white;
 }
 
-#ImagePage {
-    border-radius: 10px;
-    border: none; 
-    display: flex;
-    margin-left: 5rem;
-    background: #f0f0f0; 
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
-                -4px -4px 8px rgba(255, 255, 255, 0.5),
-                4px -4px 8px rgba(0, 0, 0, 0.2),
-                -4px 4px 8px rgba(255, 255, 255, 0.5); 
-}
-
-
 
  #tittlePage{
     display: flex;
@@ -109,13 +97,7 @@ footer a:hover {
     padding-top: 1rem;
 }
 
-.anadir{
-    display: flex;
-    margin-right: 30rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
-    text-transform: uppercase;
-}
+
 
 #volverCarrito{
     display: flex;
@@ -129,6 +111,12 @@ footer a:hover {
     padding-right: 16%;
     padding-left: 8%;
     text-transform: uppercase;
+}
+
+.botonDetalle{
+    background-color: #000000;
+    color: white;
+    border-color: #f7b707;
 }
 
 

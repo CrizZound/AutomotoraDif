@@ -1,0 +1,23 @@
+#añadir{
+    display: flex;
+    text-align: center;
+    background-color: #caa008;
+    border-color: #c89d03;
+    margin-left: 3.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+}
+
+#ImagePage {
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    border: none; 
+    display: flex;
+    margin-left: 5rem;
+    background: #f0f0f0; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                -4px -4px 8px rgba(255, 255, 255, 0.5),
+                4px -4px 8px rgba(0, 0, 0, 0.2),
+                -4px 4px 8px rgba(255, 255, 255, 0.5); 
+}

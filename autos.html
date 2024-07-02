@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/autos.css">
 </head>
 <body>
     <div class="row">
@@ -56,27 +56,35 @@
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <img id="ImagePage" src="" alt="Imágen del vehículo" class="card-img-top w-75">
       </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4 id="titlePage"></h4>
-            <h6 id="colorPage"></h6>
-            <p id="precioPage"></p>
-            <h3 id="descripcionPage"></h3>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4 id="titlePage"></h4>
+          <h6 id="colorPage"></h6>
+          <p id="precioPage"></p>
+          <h3 id="descripcionPage"></h3>
           <div id="productos">
-              <div class="producto" data-nombre="911 Carrera" data-precio="120000000" data-stock="10">
+              <div class="producto" data-nombre="producto 1" data-precio="120000000" data-stock="10">
                 <h3 id="añadirCarrito">¿Añadir al carrito?</h3>
-                <h6 id="modelo">Porsche 911 Carrera</h6>
-                <button class="btn btn-light" id="anadir ">Añadir</button>
+                  <button class="btn btn-light" id="añadir">Añadir</button>
+                </div>
+                <div class="producto" data-nombre="Producto 2" data-precio="20" data-stock="5">
+                  Producto 2 - $20
+                  <button class="agregar">Agregar al carrito</button>
+                </div>
+                <div>
+                  <ul id="carrito-lista"></ul>
+                </div>
                 <div class="container">
                   <a class="btn btn-warning" id="volverCarrito" href="./modelos.html">Volver</a>
                 </div>
               </div>
           </div>
-        </div>
+      </div>
     </div>
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 <footer>

@@ -1,0 +1,13 @@
+img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 5px 5px;
+}
+
+.card{
+    background-color: rgba(203, 203, 203, 0.325);
+    border-color: rgba(245, 229, 1, 0.416);
+}
+
+

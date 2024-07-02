@@ -52,6 +52,7 @@ const crearTarjetas = (autos) =>{
 
         const btnMostrar = document.createElement("button");
         btnMostrar.classList.add("btn");
+        btnMostrar.classList.add("botonDetalle");
         btnMostrar.classList.add("btn-danger");
         btnMostrar.textContent= "Ver detalles";
         btnMostrar.addEventListener("click", () => {
