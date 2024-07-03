@@ -47,7 +47,7 @@ const crearTarjetas = (autos) =>{
         subTitulo.textContent = color;
 
         const precioSub = document.createElement("p");
-        precioSub.classList.add("card-text");
+        precioSub.classList.add("card-text-precio");
         precioSub.textContent = precio;
 
         const btnMostrar = document.createElement("button");
@@ -59,6 +59,8 @@ const crearTarjetas = (autos) =>{
             enviarDatos(modelo, color, imagen, descripcion, precio);
         })
 
+
+
         divRow.appendChild(card);
 
         card.appendChild(img);
@@ -68,6 +70,7 @@ const crearTarjetas = (autos) =>{
         divBody.appendChild(subTitulo);
         divBody.appendChild(precioSub);
         divBody.appendChild(btnMostrar);
+
 
         autoRow.appendChild(divRow);
     })
